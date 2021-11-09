@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Sayedha.Templates.CliTool": {
+      "commandName": "Project",
+      "commandLineArgs": "CmdDisplayName --paramname 1234526"
+    }
+  }
+}
