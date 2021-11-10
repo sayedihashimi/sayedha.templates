@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Sayed I. Hashimi",
+    "classifications": ["Console","Tool"],
+    "name": "clitool",
+    "defaultName": "MyTool",
+    "identity": "Sayedha.Templates.CliTool",
+    "shortName": "clitool",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "sourceName": "Sayedha.Templates.CliTool",
+    "preferNameDirectory": true,
+    "symbols": {
+        "SubcommandName": {
+            "type": "parameter",
+            "defaultValue": "Subcommand",
+            "replaces": "MyCommand",
+            "datatype": "text",
+            "description": "Name of the subcommand"
+        },
+        "ParamName":{
+            "type":"parameter",
+            "defaultValue": "paramname",
+            "replaces": "paramname",
+            "datatype":"text",
+            "description": "Name of parameter for the subcommand"
+        }
+    }
+  }
