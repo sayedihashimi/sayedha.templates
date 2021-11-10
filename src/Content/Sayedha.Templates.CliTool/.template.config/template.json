@@ -12,20 +12,34 @@
     },
     "sourceName": "Sayedha.Templates.CliTool",
     "preferNameDirectory": true,
-    "symbols": {
-        "SubcommandName": {
-            "type": "parameter",
-            "defaultValue": "Subcommand",
-            "replaces": "MyCommand",
-            "datatype": "text",
-            "description": "Name of the subcommand"
-        },
-        "ParamName":{
-            "type":"parameter",
-            "defaultValue": "paramname",
-            "replaces": "paramname",
-            "datatype":"text",
-            "description": "Name of parameter for the subcommand"
-        }
+  "symbols": {
+    "SubcommandName": {
+      "type": "parameter",
+      "defaultValue": "Subcommand",
+      "replaces": "MyCommand",
+      "datatype": "text",
+      "description": "Name of the subcommand"
+    },
+    "ParamName": {
+      "type": "parameter",
+      "defaultValue": "paramname",
+      "replaces": "paramname",
+      "datatype": "text",
+      "description": "Name of parameter for the subcommand"
+    },
+    "SubcommandDesc": {
+      "type": "parameter",
+      "defaultValue": "TODO: update command description",
+      "replaces": "Command Description",
+      "datatype": "text",
+      "description": "Help text for command description"
+    },
+    "ParamDesc": {
+      "type": "parameter",
+      "defaultValue": "TODO: update param description",
+      "replaces": "Parameter description here",
+      "datatype": "text",
+      "description": "Help text for the parameter description"
     }
+  }
   }

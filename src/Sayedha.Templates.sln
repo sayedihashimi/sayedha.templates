@@ -5,6 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sayedha.Templates.CliTool", "Content\Sayedha.Templates.CliTool\Sayedha.Templates.CliTool.csproj", "{38BAD070-339A-4A52-8CCB-A8ECF8751B2B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "clitool sln items", "clitool sln items", "{FB6BA1D5-54BE-44FD-AF3F-A8CAFADDE5AB}"
+	ProjectSection(SolutionItems) = preProject
+		Content\Sayedha.Templates.CliTool\.template.config\template.json = Content\Sayedha.Templates.CliTool\.template.config\template.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
