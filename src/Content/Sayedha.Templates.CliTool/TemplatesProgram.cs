@@ -15,7 +15,7 @@ namespace Sayedha.Templates.CliTool {
         public Task<int> Execute(string[] args) {
             _parser = new CommandLineBuilder()
                         .AddCommand(
-                            new MyCommand().CreateCommand())
+                            new MyCommand(GetFromServices<IReporter>()).CreateCommand())
                         .UseDefaults()
                         .Build();
 

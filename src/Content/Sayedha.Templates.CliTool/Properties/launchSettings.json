@@ -2,7 +2,7 @@
   "profiles": {
     "Sayedha.Templates.CliTool": {
       "commandName": "Project",
-      "commandLineArgs": "CmdDisplayName --paramname 1234526"
+      "commandLineArgs": "MyCommand --paramname 1234526 --verbose"
     }
   }
 }

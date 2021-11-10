@@ -3,13 +3,19 @@ using System.CommandLine.Invocation;
 
 namespace Sayedha.Templates.CliTool {
     public class MyCommand : CommandBase {
+        private IReporter _reporter;
+        public MyCommand(IReporter reporter) {
+            _reporter = reporter;
+        }
         public override Command CreateCommand() =>
             new Command(name: "MyCommand", description: "Command Description") {
-                CommandHandler.Create<string, bool>(async (paramname, useVerbose) => {
-                    Console.WriteLine(VsAscii);
-                    Console.WriteLine(string.Empty);
-                    Console.WriteLine($"paramname: {paramname}");
-                    Console.WriteLine($"useVerbose: {useVerbose}");
+                CommandHandler.Create<string, bool>(async (paramname, verbose) => {
+                    _reporter.EnableVerbose = verbose;
+                    _reporter.WriteLine(VsAscii);
+                    _reporter.WriteLine(string.Empty);
+                    _reporter.WriteLine($"paramname: {paramname}");
+                    _reporter.WriteLine($"verbose: {verbose}");
+                    _reporter.WriteVerbose("verbose message here");
                     // added here to avoid async/await warning
                     await Task.Delay(1000);
                 }),

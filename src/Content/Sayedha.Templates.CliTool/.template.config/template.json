@@ -20,19 +20,19 @@
       "datatype": "text",
       "description": "Name of the subcommand"
     },
+    "SubcommandDesc": {
+        "type": "parameter",
+        "defaultValue": "TODO: update command description",
+        "replaces": "Command Description",
+        "datatype": "text",
+        "description": "Help text for command description"
+      },
     "ParamName": {
       "type": "parameter",
       "defaultValue": "paramname",
       "replaces": "paramname",
       "datatype": "text",
       "description": "Name of parameter for the subcommand"
-    },
-    "SubcommandDesc": {
-      "type": "parameter",
-      "defaultValue": "TODO: update command description",
-      "replaces": "Command Description",
-      "datatype": "text",
-      "description": "Help text for command description"
     },
     "ParamDesc": {
       "type": "parameter",

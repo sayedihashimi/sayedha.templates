@@ -1,8 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+  <!-- More info on nuget msbuild properties: https://docs.microsoft.com/en-us/nuget/reference/msbuild-targets -->
   <PropertyGroup>
+    <!-- 
+      Setting PackageType to Template enables displaying the command to install the tool on nuget.org
+    -->
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <PackageId>sayedha.templates</PackageId>
     <Title>sayedha.templates</Title>
     <Authors>Sayed Ibrahim Hashimi</Authors>
@@ -12,12 +15,14 @@
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- include content files here -->
     <Content Include=".\**\*" Exclude="$(MSBuildProjectFullPath);.\**\bin\**;.\**\obj\**;.\**\.vs\**" />
+    <!-- exclude this file from the generated package -->
     <Content Remove="$(MSBuildProjectFullPath)"/>
     <Compile Remove="**\*" />
   </ItemGroup>
-
 </Project>
