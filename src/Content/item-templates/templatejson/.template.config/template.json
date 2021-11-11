@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Sayed I. Hashimi",
+    "classifications": ["template"],
+    "name": "templatejson",
+    "identity": "Sayedha.Templates.TemplateJson",
+    "shortName": "templatejson",
+    "tags": {
+      "language": "C#",
+      "type": "item"
+    },
+    "preferNameDirectory": true
+  }
