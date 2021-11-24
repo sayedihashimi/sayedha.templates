@@ -12,6 +12,7 @@
     },
     "sourceName": "Sayedha.Templates.CliTool",
     "preferNameDirectory": true,
+    "description": "Template for a dotnet CLI tool",
   "symbols": {
     "SubcommandName": {
       "type": "parameter",

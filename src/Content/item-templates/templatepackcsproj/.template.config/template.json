@@ -9,5 +9,6 @@
       "language": "C#",
       "type": "item"
     },
-    "preferNameDirectory": true
+    "preferNameDirectory": true,
+    "description": "Item template for a template.csproj that can pack templates"
   }

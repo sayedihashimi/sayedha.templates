@@ -12,6 +12,7 @@
     },
     "sourceName": "Sayedha.Templates.CliTool",
     "preferNameDirectory": true,
+    "description": "description here",
     "symbols": {
         "SubcommandName": {
         "type": "parameter",
