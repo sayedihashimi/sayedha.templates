@@ -1,46 +1,16 @@
 {
     "$schema": "http://json.schemastore.org/template",
-    "author": "Sayed I. Hashimi",
+    "author": "Your Name Here",
     "classifications": ["Console","Tool"],
-    "name": "clitool",
+    "name": "mytemplate",
     "defaultName": "MyTool",
-    "identity": "Sayedha.Templates.CliTool",
-    "shortName": "clitool",
+    "identity": "Some.Relatively.Unique.String.Here",
+    "shortName": "mytemplate",
     "tags": {
       "language": "C#",
       "type": "project"
     },
-    "sourceName": "Sayedha.Templates.CliTool",
+    "sourceName": "sourceName",
     "preferNameDirectory": true,
-    "description": "description here",
-    "symbols": {
-        "SubcommandName": {
-        "type": "parameter",
-        "defaultValue": "Subcommand",
-        "replaces": "MyCommand",
-        "datatype": "text",
-        "description": "Name of the subcommand"
-        },
-        "SubcommandDesc": {
-            "type": "parameter",
-            "defaultValue": "TODO: update command description",
-            "replaces": "Command Description",
-            "datatype": "text",
-            "description": "Help text for command description"
-        },
-        "ParamName": {
-        "type": "parameter",
-        "defaultValue": "paramname",
-        "replaces": "paramname",
-        "datatype": "text",
-        "description": "Name of parameter for the subcommand"
-        },
-        "ParamDesc": {
-        "type": "parameter",
-        "defaultValue": "TODO: update param description",
-        "replaces": "Parameter description here",
-        "datatype": "text",
-        "description": "Help text for the parameter description"
-        }
-    }
+    "description": "description here"
   }

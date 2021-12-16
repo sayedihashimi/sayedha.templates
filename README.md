@@ -6,7 +6,7 @@ For info on how to create your own dotnet templates go to https://aka.ms/netcore
 To install this template pack, run the following command in a terminal.
 
 ```bash
-dotnet new --install sayedha.templates::1.0.5
+dotnet new --install sayedha.templates
 ```
 
 ## Templates

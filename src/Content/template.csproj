@@ -5,7 +5,7 @@
       Setting PackageType to Template enables displaying the command to install the tool on nuget.org
     -->
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.5</PackageVersion>
+    <PackageVersion>1.0.6</PackageVersion>
     <PackageId>sayedha.templates</PackageId>
     <Title>sayedha.templates</Title>
     <Authors>Sayed Ibrahim Hashimi</Authors>

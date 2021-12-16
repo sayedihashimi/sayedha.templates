@@ -5,21 +5,36 @@
       Setting PackageType to Template enables displaying the command to install the tool on nuget.org
     -->
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.3</PackageVersion>
-    <PackageId>sayedha.templates</PackageId>
-    <Title>sayedha.templates</Title>
-    <Authors>Sayed Ibrahim Hashimi</Authors>
-    <Description>Some dotnet templates created by Sayed.</Description>
-    <PackageTags>dotnet-new;templates</PackageTags>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <!-- Update this as needed -->
+    <PackageVersion>0.0.1</PackageVersion>
+    <PackageId>unique.id.for.this.package</PackageId>
+    <Title>title of this package</Title>
+    <Authors>Your Name Here</Authors>
+    <Description>Add a description here.</Description>
+    <!-- 
+      To embed a README that will be displayed on nuget.org, uncomment the following line and the secton below.
     <PackageReadmeFile>README.md</PackageReadmeFile>
+     -->
+    <!-- Leave these tags, but feel free to add some more here -->
+    <PackageTags>dotnet-new;templates</PackageTags>
+    <!-- Typically this doesn't need to be modified -->
+    <TargetFramework>netstandard2.0</TargetFramework>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
+    <!-- 
+      Update license expression as needed.
+      See https://docs.microsoft.com/en-us/nuget/nuget-org/licenses.nuget.org#license-expressions      
+    -->
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-	  <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+    <!-- 
+      To embed a README that will be displayed on nuget.org, uncomment the following line and update the path to the file
+      <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+    -->
+    <!-- If you're not using the embedded README.md remove the following line -->
+	  
     <!-- include content files here -->
     <Content Include="*.*;.\**\*" Exclude="$(MSBuildProjectFullPath);.\**\bin\**;.\**\obj\**;.\**\.vs\**" />
     <!-- exclude this file from the generated package -->
