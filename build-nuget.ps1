@@ -9,6 +9,7 @@ $intoutputpath = join-path $outputpath bin\
 function Reset-Tempaltes(){
     dotnet new --uninstall $contentFolder
     dotnet new --uninstall sayedha.templates
+    dotnet new --debug:rebuildcache
 }
 
 function Clean(){
