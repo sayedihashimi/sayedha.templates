@@ -13,6 +13,9 @@
     "sourceName": "Sayedha.Templates.CliTool",
     "preferNameDirectory": true,
     "description": "Template for a dotnet CLI tool",
+    "ide":{
+      "categories":["msbuild","desktop"]
+    },
   "symbols": {
     "SubcommandName": {
       "type": "parameter",
