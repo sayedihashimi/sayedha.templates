@@ -33,7 +33,7 @@
       To embed a README that will be displayed on nuget.org, uncomment the following line and update the path to the file
       <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
     -->
-    <!-- If you're not using the embedded README.md remove the following line -->
+    <!-- If you're not using the embedded README.md remove this line and the previous comment -->
 	  
     <!-- include content files here -->
     <Content Include="*.*;.\**\*" Exclude="$(MSBuildProjectFullPath);.\**\bin\**;.\**\obj\**;.\**\.vs\**" />
