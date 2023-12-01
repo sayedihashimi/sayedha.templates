@@ -1,0 +1,21 @@
+version: 1.0.{build}
+image: Visual Studio 2022
+configuration: Release
+
+init:
+- pwsh: if(test-path -LiteralPath ./ci.build.init.ps1){. ./ci.build.init.ps1}
+
+before_build:
+  - choco install dotnet-sdk --version 8.0.100
+  - dotnet restore src\Sayedha.Templates.sln
+
+build:
+  project: src\Sayedha.Templates.sln
+  publish_core_console: true
+  verbosity: normal
+
+after_build:
+  - dotnet pack src/Content/Sayedha.Templates.CliTool/Sayedha.Templates.CliTool.csproj
+
+artifacts:
+ - path: '**\nupkg\*.nupkg'
