@@ -16,7 +16,7 @@ build:
 
 after_build:
   - mkdir C:\projects\sayedha-templates\nupkg\
-  - dotnet pack src/Content/Sayedha.Templates.CliTool/Sayedha.Templates.CliTool.csproj /p:OutputPath='C:\projects\sayedha-templates\nupkg\'
+  - dotnet pack src/Content/Sayedha.Templates.CliTool/Sayedha.Templates.CliTool.csproj /p:OutputPath=C:\projects\sayedha-templates\nupkg\
 
 artifacts:
  - path: '**\nupkg\*.nupkg'
