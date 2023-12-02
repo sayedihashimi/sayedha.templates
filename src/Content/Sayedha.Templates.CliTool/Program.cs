@@ -1,3 +1,3 @@
 ﻿using Sayedha.Templates.CliTool;
 
-new TemplatesProgram().Execute(args);
+await new TemplatesProgram().Execute(args);
