@@ -15,7 +15,7 @@ build:
   verbosity: normal
 
 after_build:
-  - dotnet pack src/Content/Sayedha.Templates.CliTool/Sayedha.Templates.CliTool.csproj
+  - dotnet pack src/Content/Sayedha.Templates.CliTool/Sayedha.Templates.CliTool.csproj /p:OutputPath=nupkg\ /p:BaseIntermediateOutputPath=packbin\
 
 artifacts:
  - path: '**\nupkg\*.nupkg'
